@@ -1,30 +1,32 @@
 import java.util.Scanner;
 
+/**
+ * https://open.kattis.com/problems/autori/
+ * @author brunovolpato
+ */
 public class Autori {
-	public static void main(String[] args) {
-	
-		Scanner sc = new Scanner(System.in);
+  public static void main(String[] args) {
 
-		String longName = sc.nextLine();
-		
-		boolean activated = true;
+    Scanner sc = new Scanner(System.in);
 
-		StringBuilder shortName = new StringBuilder();
+    String longName = sc.nextLine();
 
-		for (int i = 0; i < longName.length(); i++) {
-			if (activated) {
-				activated = false;
-				shortName.append(longName.charAt(i));
-				continue;
-			}
+    boolean activated = true;
 
-			if (longName.charAt(i) == '-') {
-				activated = true;
-			}
+    StringBuilder shortName = new StringBuilder();
 
-		}
+    for (int i = 0; i < longName.length(); i++) {
+      if (activated) {
+        activated = false;
+        shortName.append(longName.charAt(i));
+        continue;
+      }
 
-		System.out.println(shortName.toString());
-	}
+      if (longName.charAt(i) == '-') {
+        activated = true;
+      }
+    }
 
+    System.out.println(shortName.toString());
+  }
 }

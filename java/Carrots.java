@@ -1,19 +1,21 @@
 import java.util.Scanner;
 
+/**
+ * https://open.kattis.com/problems/carrots/
+ * @author brunovolpato
+ */
 public class Carrots {
-	public static void main(String[] args) {
-	
-		Scanner sc = new Scanner(System.in);
+  public static void main(String[] args) {
 
-		int participants = sc.nextInt();
-		int carrots = sc.nextInt();
+    Scanner sc = new Scanner(System.in);
 
-		for (int i = 0; i <= participants; i++) {
-			sc.nextLine();
-		}
+    int participants = sc.nextInt();
+    int carrots = sc.nextInt();
 
-		System.out.println(carrots);
+    for (int i = 0; i <= participants; i++) {
+      sc.nextLine();
+    }
 
-	}
-
+    System.out.println(carrots);
+  }
 }

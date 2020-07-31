@@ -1,22 +1,25 @@
 import java.util.Scanner;
 
+/**
+ * https://open.kattis.com/problems/quadrant/
+ * @author brunovolpato
+ */
 public class Quadrant {
-	public static void main(String[] args) {
-	
-		Scanner sc = new Scanner(System.in);
+  public static void main(String[] args) {
 
-		int x = sc.nextInt();
-		int y = sc.nextInt();
+    Scanner sc = new Scanner(System.in);
 
-		if (x > 0 && y > 0) {
-			System.out.println("1");
-		} else if (x < 0 && y > 0) {
-			System.out.println("2");
-		} else if (x < 0 && y < 0) {
-			System.out.println("3");
-		} else {
-			System.out.println("4");
-		}
-	}
+    int x = sc.nextInt();
+    int y = sc.nextInt();
 
+    if (x > 0 && y > 0) {
+      System.out.println("1");
+    } else if (x < 0 && y > 0) {
+      System.out.println("2");
+    } else if (x < 0 && y < 0) {
+      System.out.println("3");
+    } else {
+      System.out.println("4");
+    }
+  }
 }
