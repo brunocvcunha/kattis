@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 /**
  * https://open.kattis.com/problems/carrots/
+ *
  * @author brunovolpato
  */
 public class Carrots {

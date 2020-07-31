@@ -3,6 +3,7 @@ import java.util.Stack;
 
 /**
  * https://open.kattis.com/problems/symmetricorder/
+ *
  * @author brunovolpato
  */
 public class SymmetricOrder {

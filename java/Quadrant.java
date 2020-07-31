@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 /**
  * https://open.kattis.com/problems/quadrant/
+ *
  * @author brunovolpato
  */
 public class Quadrant {
