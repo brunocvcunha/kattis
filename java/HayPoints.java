@@ -1,6 +1,7 @@
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.stream.Stream;
 
 /**
  * https://open.kattis.com/problems/haypoints/
@@ -27,11 +28,7 @@ public class HayPoints {
 
       String line;
       while (!(line = sc.nextLine()).equals(".")) {
-
-        for (String word : line.split("\\s")) {
-          int wordWorth = dictionary.getOrDefault(word, 0);
-          jobSalary += wordWorth;
-        }
+        jobSalary += Stream.of(line.split("\\s")).mapToInt(word -> dictionary.getOrDefault(word, 0)).sum();
       }
 
       System.out.println(jobSalary);
