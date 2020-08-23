@@ -4,4 +4,6 @@ out/
 .vscode/
 
 a.out
-
+MyTemplate*.java
+cmake-build-debug
+_testfiles/
